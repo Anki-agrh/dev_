@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("https://1drv.ms/i/s!AtqO9sypSFtsgQBMrcCJx0j-etV0?embed=1&width=2560&height=1600");
+    background-size: cover;
+    color: #ffffff;
+    text-align: center;
+}
+
+.content {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for content */
+    padding: 100px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    max-width: 800px;
+    width: 100%;
+    animation: fadeIn 2s ease-in-out; /* Apply animation */
+}
+
+h1 {
+    font-size: 3rem; /* Increase font size */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+p {
+    font-size: 1.4rem; /* Increase font size */
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.join-button {
+    display: inline-block;
+    padding: 15px 30px; /* Increase padding for better button appearance */
+    background-color: #ff5f6d; /* Button color */
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.join-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    background-color: #ff3b47; /* Darker shade on hover */
+}
