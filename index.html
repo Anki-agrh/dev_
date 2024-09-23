@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styless.css">
+    <style>
+        /* Slide-in animation */
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .slide-in {
+            animation: slideIn 5s ease-out forwards;
+        }
+
+        /* Animation for the 'Grooming Personality' text */
+        @keyframes textAnimation {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            50% {
+                opacity: 0.5;
+                transform: translateY(10px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .text-animate {
+            animation: textAnimation 4s ease-out;
+        }
+
+        /* Carousel styles */
+        .carousel-container {
+            width: 80%;
+            height: 380px; /* Height of the banner */
+            margin: 20px auto;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        .carousel-slide {
+            display: flex;
+            width: 300%;
+            height: 100%; /* Match the container height */
+            transition: transform 0.5s ease-in-out; /* Animation transition for smooth sliding */
+        }
+
+        .carousel-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures images cover the full banner area */
+        }
+
+        /* Carousel controls */
+        .carousel-container .prev,
+        .carousel-container .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            z-index: 1000;
+        }
+
+        .carousel-container .prev {
+            left: 10px;
+        }
+
+        .carousel-container .next {
+            right: 10px;
+        }
+
+        /* Add a fade-in animation when images slide */
+        .carousel-slide img {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>The Social Engineers' Board</h1>
+            <nav>
+                <ul>
+                    <li><a href="about-us.html" target="_blank">About Us</a></li>
+                    <li><a href="events.html" target="_blank">Events</a></li>
+                    <li><a href="gallery.html" target="_blank">Photo Gallery</a></li>
+                    <li><a href="team.html" target="_blank">Our Team</a></li>
+                    <li><a href="sponsers.html" target="_blank">Sponsers</a></li>
+                    <li><a href="joinus.html" target="_blank">Join Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Logo Section -->
+    <div class="logo-container">
+        <img src="https://1drv.ms/i/s!AtqO9sypSFtsbSZxh4-ipzfV4tk?embed=1&width=458&height=458" alt="mmmut logo" class="logo">
+        <img src="https://1drv.ms/i/s!AtqO9sypSFtsgQLqr7VUtcyY_W6w?embed=1&width=239&height=211" alt="seb logo" class="logo">
+    </div>
+    <center><h2 class="text-animate">Grooming Personality</h2></center>
+    
+    <!-- Banner-like Carousel Section -->
+    <div class="carousel-container">
+        <div class="carousel-slide" id="carouselSlide">
+            <img src="https://1drv.ms/i/s!AtqO9sypSFtsb7JqY4bGC8UE4dw?embed=1&width=3984&height=2656" alt="Banner 1">
+            <img src="https://1drv.ms/i/s!AtqO9sypSFtsf2C2rgTwtqwwejM?embed=1&width=1600&height=616" alt="Banner 2">
+            <img src="https://1drv.ms/i/s!AtqO9sypSFtsfPqhmrYCoxRQSUY?embed=1&width=3984&height=2656" alt="Banner 3">
+        </div>
+        <!-- Carousel controls -->
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+
+    <main>
+        <section id="content">
+            <div class="left-half">
+                <h2><center>Upcoming Events</center></h2>
+                <div class="slide-in">
+                    <h3 style="font-family: 'Roboto Slab', serif;font-size: 1.3em;">Drishyaa</h3>
+                    <p style="font-family: 'Roboto Slab', serif;font-size: 1.2em;">Drishyaa offers career counselling session to guide first year students in making career decisions. Our expert counsellors provide advice and support to students and navigate their career paths.</p>
+                </div>
+                <div class="slide-in">
+                    <h3 style="font-family: 'Roboto Slab', serif;font-size: 1.3em;">Dhishan</h3>
+                    <p style="font-family: 'Roboto Slab', serif;font-size: 1.2em;">Dhishan is our annual debate competition where students showcase their debating skills on various topics. This event encourages critical thinking and public speaking, providing a platform for students to express their opinions and ideas.</p>
+                </div>
+                <div class="slide-in">
+                    <h3 style="font-family: 'Roboto Slab', serif;font-size: 1.em;">Utthaan</h3>
+                    <p style="font-family: 'Roboto Slab', serif;font-size: 1.2em;">Utthaan focuses on social work initiatives aimed at making a positive impact in our community, this includes blood donation camps, food distribution drives etc.</p>
+                </div>
+            </div>
+
+            <div class="right-half">
+                <h2 style="font-family: 'Roboto Slab', serif;"><center>Our Instagram Highlights</center></h2>
+                <div class="instagram-container">
+                    <!-- <h3>Our Instagram Highlights</h3> -->
+                    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/seb.mmmut?igsh=MXVkNjJrZ2c2Zm04aA==" data-instgrm-version="14" style="background:#FFF; border:0; margin:0 auto; max-width:560px; padding:0; width:90%; width:-webkit-calc(100% - 3px); width:calc(100% - 3px);height:480px;">
+                        <div style="padding:15px;">
+                            <a href="https://www.instagram.com/seb.mmmut?igsh=MXVkNjJrZ2c2Zm04aA==" style="color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:16px; text-decoration:none; word-wrap:break-word;" target="_blank">Posts Shared by the Society</a>
+                        </div>
+                    </blockquote>
+                    <script async defer src="//www.instagram.com/embed.js"></script>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <h3 style="font-family: 'Roboto Slab', serif;"><center>Contact Us</center></h3>
+        <p style="font-family: 'Roboto Slab', serif;"><a href="https://www.instagram.com/seb.mmmut?igsh=MXVkNjJrZ2c2Zm04aA==">Instagram</a></p>
+        <p style="font-family: 'Roboto Slab', serif;"><a href="https://www.facebook.com/seb.mmmut?mibextid=ZbWKwL">Facebook</a></p>
+        <p style="font-family: 'Roboto Slab', serif;"><a href="mailto:sebmmmut.info">E-mail : sebmmmut.info</a></p>
+    </footer>
+
+    <script>
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('.carousel-slide img');
+
+        function showSlide(index) {
+            if (index >= slides.length) {
+                currentIndex = 0;
+            } else if (index < 0) {
+                currentIndex = slides.length - 1;
+            } else {
+                currentIndex = index;
+            }
+            const slideWidth = slides[0].clientWidth;
+            document.getElementById('carouselSlide').style.transform = `translateX(${-currentIndex * slideWidth}px)`;
+        }
+
+        function nextSlide() {
+            showSlide(currentIndex + 1);
+        }
+
+        function prevSlide() {
+            showSlide(currentIndex - 1);
+        }
+
+        window.addEventListener('resize', () => showSlide(currentIndex)); // Adjust the slide position on window resize
+    </script>
+</body>
+</html>
