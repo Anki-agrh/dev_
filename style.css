@@ -1,0 +1,56 @@
+/* General styling for the body */
+body {
+    background-image: url("https://1drv.ms/i/s!AtqO9sypSFtsgQBMrcCJx0j-etV0?embed=1&width=2560&height=1600");
+    background-size:cover;
+    font-family: 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(211, 235, 223, 0.8); /* Translucent background */
+    color: #fff; /* White text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Prevents scrolling if content is centered */
+}
+
+/* Container for About Us content */
+.about-us-container {
+    text-align: center;
+    background-color: rgba(58, 52, 52, 0.9); /* Slightly lighter translucent background for readability */
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0 0 15px rgba(250, 245, 245, 0.5);
+}
+
+/* Styling for section headings */
+.about-us-container h1,
+.about-us-container h2 {
+    margin: 0;
+    color: #fff; /* Ensure headings are visible */
+}
+
+.about-us-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about-us-container h2 {
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+/* Styling for sections */
+.mission,
+.team,
+.history {
+    margin-bottom: 20px;
+}
+
+.about-us-container p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 0;
+}
