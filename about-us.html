@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - The Social Engineers' Board</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .slide-in {
+            animation: slideIn 5s ease-out forwards;
+        }
+
+        /* Animation for fading in the text */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 2s ease-out forwards;
+        }
+
+        /* Styling for circular images */
+        .faculty-advisors {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .faculty-advisors h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .faculty-advisors img {
+            border-radius: 50%;
+            width: 150px; /* Adjust size as needed */
+            height: 150px; /* Adjust size as needed */
+            margin: 0 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+    </style>
+</head>
+<body>
+    
+    <!-- About Us Content -->
+    <div class="about-us-container slide-in">
+        <h1>About Us</h1>
+        <section class="mission fade-in-up">
+            <h2>Mission</h2>
+            <p>With the motto of Grooming Personalities, the board aims at not only refining the engineering graduates academically, but holistically.
+                It believes in the collective responsibility of the student fraternity towards the betterment of society and thus, constantly works in the direction of achieving this cause.
+                
+                The board tries to achieve its goals by series of various events conducted throughout the academic year, both inside and outside the university.</p>
+        </section>
+        
+        <section class="history fade-in-up">
+            <h2>History</h2>
+            <p>The Social Engineers' Board was founded in 2013 by Naveen Krishna Rai and Mohit Jha, both 2016 graduates from the Electronics and Communication Engineering (ECE) department of MMMEC. With a vision to provide career counseling and personality development, the board aims to guide students in shaping their futures and becoming well-rounded professionals.</p>
+        </section>
+    </div>
+
+    <!-- Faculty Advisors Section -->
+    <!-- <div class="faculty-advisor">
+        <h2 style="color: black;">Faculty Advisors</h2>
+        <img src="advisor1.jpg" alt="Advisor 1"> -->
+        <!-- <img src="advisor2.jpg" alt="Advisor 2">
+        <img src="advisor3.jpg" alt="Advisor 3"> -->
+    </div>
+</body>
+</html>
