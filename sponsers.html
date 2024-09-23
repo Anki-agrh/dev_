@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sponsorships</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    <link rel="stylesheet" href="styless.css">
+    <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            animation: fadeInUp 3s ease-in-out;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 40px;
+            animation: fadeInUp 3s ease-in-out;
+        }
+
+        .sponsors-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            width: 80%;
+            max-width: 1200px;
+            animation: fadeInUp 3s ease-in-out;
+        }
+
+        .sponsor-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            animation: fadeInUp 3s ease-in-out;
+        }
+
+        .sponsor-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .sponsor-logo {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            margin-bottom: 15px;
+            animation: fadeInUp 3s ease-in-out;
+        }
+
+        .sponsor-name {
+            font-size: 1.2em;
+            color: #333;
+            animation: fadeInUp 3s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <h1>Our Sponsors</h1>
+    <div class="sponsors-container">
+        <div class="sponsor-card">
+            <img src="https://visionias.in/student/images/visionias_logo.png" alt="sponser-logo" class="sponsor-logo">
+            <p class="sponsor-name">Vision IAS</p>
+        </div>
+        <div class="sponsor-card">
+            <img src="https://1drv.ms/i/c/747196c6b7901875/IQOnOPnl8FpVQJ5L-oSsxATUAZQHIS7hKdjC9KfMf6fQLoY?width=1024" alt="sponser-logo" class="sponsor-logo">
+            <p class="sponsor-name">Saraswati IAS</p>
+        </div>
+        <div class="sponsor-card">
+            <img src="https://namonepaltrip.com/wp-content/uploads/2023/01/cropped-logo.jpg" alt="sponser-logo" class="sponsor-logo">
+            <p class="sponsor-name">Namo Nepal Trip</p>
+        </div>
+        <div class="sponsor-card">
+            <img src="https://1drv.ms/i/c/747196c6b7901875/IQMk9mSGo297TYpfSzfKdBW4AeBs9T1rfa06xx1XhMiVZrE?width=1024" alt="Sponsor 4 Logo" class="sponsor-logo">
+            <p class="sponsor-name">Cassia</p>
+        </div>
+        <div class="sponsor-card">
+            <img src="https://1drv.ms/i/c/747196c6b7901875/IQMDBg2d6b6GSrGxJ8YE4QL2AVF6R4JD3AZu8EAawXkNqMc?width=1024" alt="sponser" class="sponsor-logo">
+            <p class="sponsor-name">The Space Pizza Cafe</p>
+        </div>
+        <!-- Add more sponsor cards as needed -->
+    </div>
+</body>
+</html>
