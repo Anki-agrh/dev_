@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("https://1drv.ms/i/s!AtqO9sypSFtsgQBMrcCJx0j-etV0?embed=1&width=2560&height=1600");
+    background-size: cover;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 200px); /* 4 columns */
+    gap: 10px; /* Space between items */
+    justify-content: center; /* Center grid horizontally */
+    padding: 10px; /* Optional padding */
+}
+
+.gallery-item {
+    position: relative;
+    width: 200px; /* Width of each item */
+    height: 150px; /* Height of each item */
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+    opacity: 0; /* Start as invisible */
+    animation: fadeIn 2s ease-in-out forwards; /* Slow fade-in animation */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.1);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.2);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start from invisible */
+        transform: translateY(20px); /* Optional: add vertical movement */
+    }
+    to {
+        opacity: 1; /* End as visible */
+        transform: translateY(0); /* End at original position */
+    }
+}
